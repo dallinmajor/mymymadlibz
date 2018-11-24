@@ -60,7 +60,7 @@ class App extends Component {
     if (done) {
       return (
         <div className='container'>
-          <div className='component'>{madLib}</div>
+          <div className='component cursive'>{madLib}</div>
         </div>
       )
     }

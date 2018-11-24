@@ -1,18 +1,26 @@
-html {
-  font-family: 'Domine', serif;
-  font-family: 'Indie Flower', cursive;
-}
-
 textarea, input {
   width: 98%;
   margin: auto;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
+  font-family: 'Indie Flower', cursive;
 }
 .component {
+  font-family: 'Domine', serif;
   margin: .5rem;
   padding: 1rem;
   border: 2px;
   border-style: solid;
   border-color: black;
   border-radius: 4px;
+}
+
+.cursive {
+  font-family: 'Indie Flower', cursive;
+}
+
+.madlib {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
 }
