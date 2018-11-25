@@ -71,7 +71,7 @@ class App extends Component {
         <div className='container'>
           <div className='component cursive'>
             <p>{madLib}</p>
-            <button onClick={e => { e.preventDefault(); this.createNewML() }} className='btn btn-primary'>Back</button>
+            <button onClick={e => { e.preventDefault(); this.createNewML() }} className='btn btn-primary'>Play again?</button>
           </div>
         </div>
       )
