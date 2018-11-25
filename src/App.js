@@ -27,10 +27,19 @@ class App extends Component {
       this.setState(
         {
           madLib: ml,
-          text: null,
+          text: '',
           prompt: firstPrompt[0]
         })
     }
+  }
+
+  createNewML = () => {
+    this.setState({
+      madLib: null,
+      prompt: null,
+      text: '',
+      done: false
+    })
   }
 
   nextPrompt = () => {
@@ -60,10 +69,14 @@ class App extends Component {
     if (done) {
       return (
         <div className='container'>
-          <div className='component cursive'>{madLib}</div>
+          <div className='component cursive'>
+            <p>{madLib}</p>
+            <button onClick={e => { e.preventDefault(); this.createNewML() }} className='btn btn-primary'>Back</button>
+          </div>
         </div>
       )
-    }
+    }; 
+
     if (prompt) {
       return (
         <AnswerMadLib
@@ -72,7 +85,8 @@ class App extends Component {
           text={this.state.text}
           nextPrompt={this.nextPrompt}
         />)
-    }
+    };
+
     return (
       <MadLibCreator
         handleInputChange={this.handleInputChange}
@@ -80,7 +94,7 @@ class App extends Component {
         text={this.state.text}
       />
     )
-  }
-}
+  };
+};
 
 export default App;
