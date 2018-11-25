@@ -4,7 +4,7 @@ const MadLibCreator = ({handleInputChange, handleMadLibSubmit, text}) => {
     return (
         <div className='container'>
             <div className='component'>
-                <div className='madlib'>My My Madlib</div>
+                <div className='madlib'>{"<MyLibs>"}</div>
                 <h6>Example:</h6>
                 <p className='cursive'>{'There once was a <ADJECTIVE> <MYTHICAL BEAST>. Who lived in a <PLACE>...'}</p>
             </div>
